@@ -22,7 +22,7 @@ for i in range(0,int(n)-1):
 if dmax==1:
 	f2.write('0')
 else:
-	f2.write(str(dmax)+' '+ str(len(cs)))
+	f2.write(str(dmax)+' '+str(len(cs)))
 f2.write('\n')
 for i in cs:
 	for j in range (i-dmax+1,i+1):

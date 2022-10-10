@@ -1,4 +1,4 @@
-a=[1,5,3,0,2,1,4,3,6,8]
+a=[0,1,5,3,0,2,1,4,3,6,8]
 d=2
 n=len(a)
 l=[0]*(n+1)
@@ -7,7 +7,7 @@ l[0]=1
 for i in range(1,n):
     lmax=0
     for j in range(0,i):
-        if a[i]==a[j]+d:
+        if a[j]>0:
             if l[j]>lmax:
                 lmax=l[j]
                 t[i]=j

@@ -1,9 +1,11 @@
-def ucln(a,b):
-	if a%b==0:
-		return b 
-	return ucln(b,a%b)
-a=[2,8,4,6]
-uc=ucln(a[0],a[1])
-for i in range(2,len(a)):
-	uc=ucln(uc,a[i])
-print(uc)
+a=[1,2,2,3,2,4,5,2,6,7,6]
+b=[0]*1000000000
+max=vt=0
+for i in a:
+	b[i]+=1
+	if b[i]>max:
+		max=b[i]
+		vt=i
+	elif b[i]==max and i<cs:
+		cs=i
+print(i,b[i],b)
