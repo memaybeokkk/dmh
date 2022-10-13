@@ -1,17 +1,15 @@
-n=int(input())
-a=[1,1]
-i=0
-while a[i+1]<n:
-    a.append(a[i]+a[i+1])
-    i+=1
-a.pop(-1)
-i=len(a)-1
-while n!=0 and i>=0:
-    if n-a[i]>0:
-        print(a[i],',',end='')
-        n=n-a[i]
-    elif n-a[i]==0:
-        print(a[i])
-        n=n-a[i]
-  
-    i-=1   
+a=[chr(i) for i in range(ord('a'),ord('z')+1)]
+A=[chr(i) for i in range(ord('A'),ord('Z')+1)]
+s='HEAL THE WORLD'
+s1=''
+for i in s:
+    
+    if i!=' ':
+
+        if i in A:
+            s1+=  A[(A.index(i)+5)%26]
+        else:
+            s1+= a[(a.index(i)+5)%26]
+    else :
+        s1+=' '
+print(s1)
