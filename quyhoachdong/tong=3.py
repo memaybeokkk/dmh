@@ -4,7 +4,7 @@ s=sum(a)
 l=[0]*(s+1)
 n=len(a)
 tongmax=0;l[0]=1
-s=s//2
+s=14
 b=[0]*n
 while s!=0:
 	kt=False
