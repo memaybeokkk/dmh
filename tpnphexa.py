@@ -30,7 +30,7 @@ def tphx(x):
             a+=str(du)
         x=x//16
     return a[::-1]
-print(tphx(int(input())))
+print(tphx(999))
 
 
     

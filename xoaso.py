@@ -3,20 +3,22 @@ s=''
 for i in s1:
 	if '0'<=i<='9':
 		s+=i
-print(s,len(s))
-nk=4
+s='35421'
+nk=3
 k=len(s)-nk
 d=0
 while True:
 	vt=d 
-	max='0'
-	for i in range(d,d+k+1):
+	max=s[d]
+	for i in range(d+1,d+k+1):
 		if s[i]>max:
 			max=s[i]
 			vt=i 
 	print(s,vt)
-	s=s[:d]+s[vt:]
-	print(s)
+	if d==0:
+		s=s[vt:]
+	else:
+		s=s[:d]+s[vt:]
 	k=k-vt+d 
 	d+=1
 	if d==nk or k==0:
