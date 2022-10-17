@@ -10,15 +10,15 @@ T[0]=a[0]
 for i in range(1,n):
 	T[i]=T[i-1]+a[i]
 #[0, 12, -22, -8, 3, 12, 4, 19, 30, 23, -33, -16, 0, 19]
-dmax=999999999
+dmax=0
 csd=csc=[]
 out=''
 
-
+print(sum(a))
 for i in range(1,n):
 	for j in range(i,n):
 
-		if (T[j]-T[i-1])%3==0 and j-i+1<dmax:
+		if (T[j]-T[i-1])%3==0 and j-i+1>dmax:
 			dmax=j-i+1
 			csd=[i]
 			csc=[j]

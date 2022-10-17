@@ -1,3 +1,4 @@
+
 f2=open('ggmap.out','w')
 f1=open('ggmap.inp','r')
 n=int(f1.readline())+1
@@ -10,7 +11,7 @@ import itertools
 def SUM(i):
 	return c[i[0]][i[1]]+c[i[1]][i[2]]+c[i[2]][i[3]]+c[i[3]][i[4]]+c[i[4]][i[0]]
 d=list(itertools.permutations([2,3,4,5]))
-b=[]
+b=[] 
 for i in d:
 	b.append([1]+list(i))
 dmin=max

@@ -15,10 +15,7 @@ while True:
 			max=s[i]
 			vt=i 
 	print(s,vt)
-	if d==0:
-		s=s[vt:]
-	else:
-		s=s[:d]+s[vt:]
+	s=s[:d]+s[vt:]
 	k=k-vt+d 
 	d+=1
 	if d==nk or k==0:

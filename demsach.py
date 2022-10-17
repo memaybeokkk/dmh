@@ -1,7 +1,7 @@
 n=int(input())
 s=[int(x) for x in input().split()]
 s=s[0:n]
-d=[0]*10000000
+d=[0]*1000000
 max=0
 dem=0
 for i in s:

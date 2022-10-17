@@ -1,5 +1,5 @@
 a=[1,2,3,0,4]
-d=4
+d=1
 l=[0]*(len(a)+1)
 t=[0]*(len(a)+1)
 l[0]=1
@@ -22,7 +22,7 @@ for i in range(len(l)):
 print(m,a,l,t,sep='\n')
 for i in m:	
 	p=[]
-	while t[i]!=0:
+	while True:
 		p.append(a[i])
 		i=t[i]
 		if t[i]==0:

@@ -30,6 +30,7 @@ for k in cs:
 			i-=1
 		else:
 			j-=1
+	print(c[::-1])
 	if int(c[::-1])>max:
-max=int(c[::-1])
+		max=int(c[::-1])
 print(max)
